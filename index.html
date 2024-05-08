@@ -1,0 +1,37 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div id="hero">
+            <div class="container">
+                <div class="score-section">
+                    <h3 class="teams-display">HOME</h3>
+                    <div class="score-container">
+                        <p class="score-screen" id="home-el">0</p>
+                    </div>
+                    <div class="scoring-options">
+                        <button class="btn" onclick="incrementOneHome()">+1</button>
+                        <button class="btn" onclick="incrementTwoHome()">+2</button>
+                        <button class="btn" onclick="incrementThreeHome()">+3</button>
+                    </div>
+                </div>
+                <div class="score-section">
+                    <h3 class="teams-display">GUEST</h3>
+                    <div class="score-container">
+                        <p class="score-screen" id="guest-el">0</p>
+                    </div>
+                    <div class="scoring-options">
+                        <button class="btn" onclick="incrementOneGuest()">+1</button>
+                        <button class="btn" onclick="incrementTwoGuest()">+2</button>
+                        <button class="btn" onclick="incrementThreeGuest()">+3</button>
+                    </div>
+                </div>
+            </div>
+            <div id="newgame-section">
+                <button onclick="restart()">NEW GAME</button>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
